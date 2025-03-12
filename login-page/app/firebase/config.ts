@@ -14,19 +14,22 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase only if it hasn't been initialized already
-let app: FirebaseApp;
-let auth: Auth;
+// let app: FirebaseApp;
+// let auth: Auth;
 
-try {
-  if (!getApps().length) {
-    app = initializeApp(firebaseConfig);
-  } else {
-    app = getApps()[0];
-  }
-  auth = getAuth(app);
-} catch (error) {
-  console.error("Error initializing Firebase:", error);
-  throw error;
-}
+// try {
+//   if (!getApps().length) {
+//     app = initializeApp(firebaseConfig);
+//   } else {
+//     app = getApps()[0];
+//   }
+//   auth = getAuth(app);
+// } catch (error) {
+//   console.error("Error initializing Firebase:", error);
+//   throw error;
+// }
 
-export { app, auth };
+// export { app, auth };
+const app = initializeApp(firebaseConfig);
+
+export const auth = getAuth(app);

@@ -180,6 +180,12 @@ export default function Home() {
                       Remember me
                     </label>
                   </div>
+                  {/* <Link
+                    href="/forgot-password"
+                    className="text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors"
+                  >
+                    Forgot password?
+                  </Link> */}
                 </div>
               )}
 
